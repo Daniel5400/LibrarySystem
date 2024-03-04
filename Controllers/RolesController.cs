@@ -13,7 +13,7 @@ namespace WebDev_CW.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   //[Authorize(Roles = "SuperAdmin")]
+   [Authorize(Roles = "Admin")]
     public class RolesController : ControllerBase
     {
         private readonly RoleManager<IdentityRole> _roleManager;
